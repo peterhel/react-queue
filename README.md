@@ -9,7 +9,7 @@ const NewsBanner = props => <div>{props.entity.headline}</div>;
 
 const init = props => ({
     duration: 5000, // Dequeue interval
-    entity: props.lastestNews // { headline: 'All is good!' } Tells which property's value to accumulate
+    entity: props.lastestNews // { headline: 'All is good!' } Tells which property's value to accumulate. Gets implicitly passed down to <NewsBanner/> each <duration>ms.
     props: { 
         // Props to be explicitly passed down to <NewsBanner />
     }
